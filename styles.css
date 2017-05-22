@@ -1,0 +1,72 @@
+/*Header*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: url("img/header-bg.jpg");
+    background-size: cover;
+    color: #fff; 
+}
+
+.navigation ul {
+    list-style: none;
+    padding-left: 0px;
+    float: right;
+}
+
+.navigation {
+    background-color:rgba(255, 255, 255, 0.1)
+}
+
+.navigation li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.navigation a {
+    font-size: 12px;
+}
+.navigation a, .call-to-action h1 {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff; 
+}
+
+.call-to-action {
+    text-align: center;
+    padding: 140px 0px 70px 0px;
+}
+
+.call-to-action h1 {
+    font-size: 60px;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.section-title {
+    background-color: #ec313c;
+    text-transform: uppercase;
+    padding: 5px 35px;
+    color: #fff;
+}
+
+h2 {
+    text-align:center;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/*Additional*/
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+
