@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .min-label {
+            min-width:80px;
+            display: inline-block;
+        }
+
+input[type=text], input[type=number], input[type=email], textarea {
+            width: 150px;
+            box-sizing: border-box;
+        }
+
+        form > div {margin-bottom: 10px;}
+
+    </style>
+
+</head>
+<body>
+
+    <form action="/save-data" method="get">
+
+    <div>
+
+        <label class="min-label" for="Vardas">Vardas</label>
+        <input type="text" name="vardas" id="vardas" autofocus required>
+
+    </div>
+        <!--
+        <label for="amzius">Amzius</label>
+        <input type="number" name="amzius">-->
+    <div>
+        <label>
+            <span class="min-label">Amzius</span>
+            <input type="number" name="amzius" value="25"> 
+        </label>
+    </div>
+
+     <div>
+        <label>
+            <span class="min-label">Miestas</span>
+            <select name="Miestas">
+                <option disabled selected>Pasirinkite miesta</option>
+                <option>Vilnius</option>
+                <option>Kaunas</option>
+                <option>Klaipeda</option>
+                <option>Siauliai</option>
+                <option>Kita</option>
+            </select>
+        </label>
+    </div>
+
+    <div>
+        <label>
+        <input type="checkbox" name="local">
+        Gyvena Lietuvoje
+        </label>
+
+        <label>
+        <input type="checkbox" name="abroad">
+        Gyvena kitur
+        </label>
+    </div>
+
+        <div>
+        <label>
+        <input type="radio" name="local">
+        Gyvena Lietuvoje
+        </label>
+
+        <label>
+        <input type="radio" name="abroad">
+        Gyvena kitur
+        </label>
+    </div>
+
+    <div>
+        <label>
+            
+        </label>
+        <span class="min-label">Pastabos</span>
+        <textarea rows="4" cols="22"></textarea>
+    </div>
+
+    <button type="reset">Isvalyti</button>
+    <button type="submit">Registruotis</button>
+    </form>
+
+</body>
+</html>
